@@ -1,8 +1,6 @@
 # WemiEnv - WeChat Mini Game Reinforcement Learning Environment
 
-WemiEnv is a reinforcement learning environment built for WeChat mini-games. It provides an interface for RL agents to interact with WeChat mini-games, allowing them to receive observation results and send actions. The interface is built on Websocket network communication. Currently, WemiEnv supports four WeChat mini-game environments: Game2048, Flappybird, BottleJump, and Planewar. Users can also customize and create their own WeChat mini-game environments through the interfaces provided by WemiEnv.
-
-We have published an accompanying paper outlining the motivation behind establishing a reinforcement learning platform for WeChat mini-games and presenting some preliminary research results using this environment.
+WemiEnv is a reinforcement learning environment built for WeChat mini-games. It provides an interface for RL agents to interact with WeChat mini-games, allowing them to receive observation results and send actions. The interface is built on Websocket network communication. Currently, WemiEnv supports four WeChat mini-game environments: Game 2048, Flappybird, Flip, and Space Fighter. Users can also customize and create their own WeChat mini-game environments through the interfaces provided by WemiEnv.
 
 # Quick Start Guide
 ## Get WemiEnv
@@ -34,7 +32,7 @@ This allows users to customize the port number according to their preferences or
 
 # API
 
-WemiEnv
+WemiEnv:
 
 |Method|Description|Takes|Gives|
 |:---:|:---:|:---:|:---:|
@@ -42,7 +40,7 @@ WemiEnv
 |env.step()|Send the next action to the simulator|message|Next observation|
 |env.reset()|Reset the simulator environment|None|Next observation|
 
-WebSocket_Server(python interact)
+WebSocket_Server(writting in Python):
 
 |Method|Description|Takes|Gives|
 |:---:|:---:|:---:|:---:|
@@ -51,7 +49,7 @@ WebSocket_Server(python interact)
 |recv_message()|Receives the most recent message from the client|None|message|
 |waiting_client()|Wait for the client to connect|None|None|
 
-WebSocket_Client(javascript interact)
+WebSocket_Client(writting in Javascript)
 |Method|Description|Takes|Gives|
 |:---:|:---:|:---:|:---:|
 |connectSocket()|Create a Websocket client and connect to a websocket server|server_url|None|
