@@ -42,16 +42,16 @@ module.exports = {
         })
       },
     // 发送游戏数据
-    socket_send(reward){
+    socket_send(obs, reward, done){
         let msg={
-            done: this.data.modalHidden,
+            done: done,
             reward: reward,
-            obs: this.data.numbers,
+            obs: obs,
            }
         wx.sendSocketMessage({
           data: JSON.stringify(msg),
           success:(res)=>{
-            // console.log("", res)
+            // console.log(res)
             },
             fail(res) {
             console.log("Fail to send.", res)
