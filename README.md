@@ -2,6 +2,8 @@
 
 WemiEnv is a reinforcement learning environment built for WeChat mini-games. It provides an interface for RL agents to interact with WeChat mini-games, allowing them to receive observation results and send actions. The interface is built on Websocket network communication. Currently, WemiEnv supports six WeChat mini-game environments: Game 2048, Flappybird, Flip, Space Fighter, Snake and Timberman. Users can also customize and create their own WeChat mini-game environments through the interfaces provided by WemiEnv.
 
+This work is accepted by IEEE Transactions on Games: https://ieeexplore.ieee.org/document/10839048
+
 # Quick Start Guide
 ## Get WemiEnv
 ### From Source
